@@ -2,8 +2,8 @@ import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 
 import BodyText from '../components/BodyText';
-import MainButton from '../components/Button';
 import TitleText from '../components/TitleText';
+import MainButton from '../components/Button';
 import Colors from '../constants/colors';
 
 const GameOverScreen = (props) => {
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   },
   resultText: {
     textAlign: 'center',
-    fontSize: 25,
+    fontSize: 20,
   },
   highlight: {
     color: Colors.primary,
