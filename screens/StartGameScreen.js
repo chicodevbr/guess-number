@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import {
   View,
   StyleSheet,
-  Text,
   Button,
   TouchableWithoutFeedback,
   Keyboard,
   Alert,
 } from 'react-native';
 import BodyText from '../components/BodyText';
+import MainButton from '../components/Button';
 import Card from '../components/Card';
 import Input from '../components/Input';
 import NumberContainer from '../components/NumberContainer';
@@ -55,10 +55,9 @@ const StartGameScreen = (props) => {
       <Card style={styles.summaryContainer}>
         <BodyText>You selected</BodyText>
         <NumberContainer>{selectedNumber}</NumberContainer>
-        <Button
-          title="START GAME"
-          onPress={() => props.onStartGame(selectedNumber)}
-        />
+        <MainButton onPress={() => props.onStartGame(selectedNumber)}>
+          START GAME
+        </MainButton>
       </Card>
     );
   }
