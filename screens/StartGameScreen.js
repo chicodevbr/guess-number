@@ -42,7 +42,7 @@ const StartGameScreen = (props) => {
     };
 
     const subscription = Dimensions.addEventListener('change', updateLayout);
-    return () => subscription.remove();
+    return () => subscription?.remove();
   });
 
   const confirmInputHandler = () => {
