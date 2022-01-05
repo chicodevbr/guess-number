@@ -28,12 +28,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   headerIOS: {
-    backgroundColor: Colors.primary,
+    backgroundColor: 'white',
     borderBottomColor: '#ccc',
     borderBottomWidth: 1,
   },
   headerAndroid: {
-    backgroundColor: 'white',
+    backgroundColor: Colors.primary,
     borderBottomColor: 'transparent',
     borderBottomWidth: 0,
   },
